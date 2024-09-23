@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DFDDDD"
+    tools:context=".Arithmetic">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie1"
+        android:layout_width="match_parent"
+        android:layout_height="280.00dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/arth" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="56dp"
+        android:padding="16dp"
+        android:id="@+id/numb"
+        android:textColor="@color/white"
+        android:hint="Enter First Number"
+        android:textColorHint="@color/white"
+        android:inputType="numberDecimal|number"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_card"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="56dp"
+        android:padding="16dp"
+        android:id="@+id/numb1"
+        android:textColor="@color/white"
+        android:hint="Enter Second Number"
+        android:textColorHint="@color/white"
+        android:inputType="numberDecimal|number"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_card"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_card"
+        android:padding="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Result"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addBtn"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/custom_card"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubtract"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_card"
+        android:text="Subtract"
+        android:textSize="20sp"
+        android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMultiply"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:text="Multiply"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_card"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDivide"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Divide"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_card"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
